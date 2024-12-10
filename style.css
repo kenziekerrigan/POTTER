@@ -1,0 +1,93 @@
+
+body, h1, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #ece2b1; 
+    color: #000000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #4a2c2a;
+    margin-bottom: 15px;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #5c0000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #5c0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: #6d0000;
+    color: white;
+}
+
+.house-logo {
+    position: absolute;
+    width: 200px; 
+    height: 250px;
+    z-index: 5; 
+}
+
+
+.gryffindor {
+    top: 40px;
+    left: 60px;
+}
+
+.slytherin {
+    top: 50px;
+    right: 60px;
+}
+
+.ravenclaw {
+    bottom: 50px;
+    left: 60px;
+}
+
+.hufflepuff {
+    bottom: 50px;
+    right: 70px;
+}
+
+.bottom-text {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    font-size: 16px; 
+    color: #5c0000;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    text-align: center;
+}
