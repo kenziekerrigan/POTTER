@@ -1,0 +1,53 @@
+Program:
+  'MOUNT YOUR BROOMS'
+    commands*=Command
+  'END GAME'
+;
+
+Command:
+  Spell | Charm | Jinx | Curse | Snitch | Cloak 
+;
+
+Spell:
+  spell=SpellName (houses+=HouseName (',' houses+=HouseName)*)?
+;
+
+Charm:
+  charm=CharmName (houses+=HouseName (',' houses+=HouseName)*)?
+;
+
+Jinx:
+  jinx=JinxName (houses+=HouseName (',' houses+=HouseName)*)?
+;
+
+Curse:
+  "CRUCIO" (house=HouseName)?
+;
+
+Snitch:
+  "GOLDEN SNITCH" (house=HouseName)?
+;
+
+Cloak:
+  "INVISIBILITY CLOAK" (house=HouseName)?
+;
+
+SpellName:
+  "APPARATE" | "ANAPNEO" | "BRACKIUM EMENDO" 
+;
+
+CharmName:
+  "ASCENDIO" | "LUMOS" | "PROTEGO" | "EXPECTO PATRONUM" | "EPISKEY" | "FERULA" | "EXPELLIARMUS" | "CONFUNDO" | "BOMBARDO" | "APPARECIUM" 
+;
+
+JinxName:
+  "OPPUGNO" | "BROOM JINX"
+;
+
+HouseName:
+  "Gryffindor" | "Slytherin" | "Ravenclaw" | "Hufflepuff"
+;
+
+Comment:
+  /\/\/.*$/
+;
